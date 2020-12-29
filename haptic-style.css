@@ -1,0 +1,48 @@
+#uiDiv {
+margin-top: 1%;
+float: right;
+position: fixed;
+top: 20%;
+right:0;
+width: 19%;
+height: 99%;
+overflow: hidden;
+}
+
+svg {
+position: fixed;
+top:0;
+left:0;
+float: left;
+width: 80%;
+height: 99%;
+margin-left: 1%;
+overflow: hidden;
+}
+
+button {
+width: 80%;
+height: 15%;
+margin: 5%;
+font-size: 2em;
+border: none;
+color: white;
+text-align: center;
+text-decoration: none;
+}
+
+#hide {
+background-color: blue;
+}
+
+#invert{
+background-color: black;
+}
+
+#grey{
+background-color: #575757;
+}
+
+ .filtered {
+   filter: url(#grayscale);
+ }
