@@ -42,10 +42,8 @@ function init() {
      svg.addEventListener('mouseleave', (event) => {
           vibStop();
      });
-
      //$("#mySVG").on("mouseover", function() { vibStart(); });
      //$("#mySVG").on("mouseleave", function() { vibStop(); });
- 
      function vibStart() {
           event.preventDefault();
           curVib = 0;
