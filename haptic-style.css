@@ -7,7 +7,7 @@
   width: 17%;
   height: 97%;
   overflow: hidden;
-  border: thick solid black;
+  border: 8px solid black;
 }
 
 #buttonContainer {
@@ -16,6 +16,7 @@
   position: fixed;
   width: 17%;
   height: 97%;
+  right: -10px;
 }
 
 svg {
