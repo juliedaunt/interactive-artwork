@@ -86,7 +86,7 @@ function init() {
               $("#hide").text("Show Artwork");
               $("image").hide();
               if ('speechSynthesis' in window) {
-                  msg.text = 'Hide Artwork'; 
+                  msg.text = 'Artwork now hidden'; 
                   speechSynthesis.speak(msg);
               }
               hide = false;
@@ -94,7 +94,7 @@ function init() {
                $("#hide").text("Hide Artwork");
                $("image").show();
                if ('speechSynthesis' in window) {
-                    msg.text = 'Show Artwork'; 
+                    msg.text = 'Artwork now displayed'; 
                     speechSynthesis.speak(msg);
                }
               hide = true;
@@ -114,7 +114,7 @@ function init() {
                invert = true;
           }
           if ('speechSynthesis' in window) {
-            msg.text = 'Invert colours'; 
+            msg.text = 'Outline colours inverted'; 
             speechSynthesis.speak(msg);
           }
      });
@@ -127,14 +127,14 @@ function init() {
                $("#filter").addClass("filtered");
                desaturate = false;
                if ('speechSynthesis' in window) {
-               msg.text = 'Remove Colours'; speechSynthesis.speak(msg);
+               msg.text = 'Colours Removed'; speechSynthesis.speak(msg);
                }
           } else if (desaturate == false) {
                $("#grey").text("Remove Colours");
                $("#filter").removeClass("filtered");
                desaturate = true;
                if ('speechSynthesis' in window) {
-               msg.text = 'Add Colours'; speechSynthesis.speak(msg);
+               msg.text = 'Colours Added'; speechSynthesis.speak(msg);
                }
           }
           });
@@ -153,12 +153,13 @@ function init() {
           }
           zoom();
      });
-     
+
+     //zoom in and out function
      function zoom() {
           var svg = document.getElementById("mySVG");
           var point = svg.createSVGPoint();
-          point.x = Event.touches.item(0).clientX; 
-          point.y = Event.touches.item(0).clientY;
+          point.x = event.clientX; 
+          point.y = event.clientY;
           point = coordinateTransform(point, svg);
           if (zoomed == false) {
                     for (var i=0; i<origMatrix.length; i++) {
