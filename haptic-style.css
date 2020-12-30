@@ -1,13 +1,21 @@
 #uiDiv {
-margin-top: 1%;
-float: right;
-position: fixed;
-top: 20%;
-right:0;
-width: 19%;
-height: 99%;
-overflow: hidden;
-border: thick solid blue;
+  margin-top: 1%;
+  float: right;
+  position: fixed;
+  top: -2%;
+  right: 0;
+  width: 17%;
+  height: 97%;
+  overflow: hidden;
+  border: thick solid black;
+}
+
+#buttonContainer {
+  margin-top: 10%;
+  float: right;
+  position: fixed;
+  width: 17%;
+  height: 97%;
 }
 
 svg {
