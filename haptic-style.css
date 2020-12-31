@@ -34,11 +34,37 @@ button {
 width: 80%;
 height: 15%;
 margin: 5%;
+padding: 5%;
 font-size: 2em;
 border: none;
 color: white;
-text-align: center;
+text-align: left;
 text-decoration: none;
+border-radius: 8px;
+}
+
+button.invert::before {
+  font-family: fontAwesome;
+  content: "\f1fb\00a0";
+  float:right;
+  vertical-align: middle;
+  line-height: 70px;  
+}
+
+button.art::before {
+  font-family: fontAwesome;
+  content: "\f03e\00a0";
+  float:right;
+  vertical-align: middle;
+  line-height: 70px;  
+}
+
+button.colour::before {
+  font-family: fontAwesome;
+  content: "\f1fc\00a0";
+  float:right;
+  vertical-align: middle;
+  line-height: 70px;  
 }
 
 #hide {
