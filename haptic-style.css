@@ -30,26 +30,33 @@ border-radius: 8px;
 }
 
 button {
-width: 80%;
-height: 18%;
-margin: 5%;
-padding: 5%;
-font-size: 120%;
-border: 2px solid white;
-color: white;
-text-align: left;
-text-decoration: none;
-border-radius: 8px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 80%;
+  height: 18%;
+  margin: 5%;
+  padding: 5%;
+  font-size: 120%;
+  border: 2px solid white;
+  color: white;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 6px 20px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  background-color: transparent;
 }
 
-button.invert::before {
-  font-family: fontAwesome;
-  content: "\f1fb\00a0";
-  float:right;
+button.invert::before,
+button.art::before,
+button.colour::before {
+  font-family: 'FontAwesome', sans-serif;
+  float: right;
   vertical-align: middle;
   line-height: 100%;
 }
+
+button.invert::before { content: "\f1fb\00a0"; }
+button.art::before { content: "\f03e\00a0"; }
+button.colour::before { content: "\f1fc\00a0"; }
 
 button.art::before {
   font-family: fontAwesome;
@@ -67,18 +74,11 @@ button.colour::before {
  line-height: 100%;
 }
 
-#hide {
-background-color: purple;
+#hide { background-color: purple; }
+#invert { background-color: green; }
+#grey { background-color: dimgray; }
+
+.filtered {
+  filter: url(#grayscale);
 }
 
-#invert{
-background-color: green;
-}
-
-#grey{
-background-color: DimGray;
-}
-
- .filtered {
-   filter: url(#grayscale);
- }
