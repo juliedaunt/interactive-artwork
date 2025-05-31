@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta http-equiv="Content-Type" content="charset=UTF-8" />
-      <meta name="viewport" content="width=device-width"/>
-      <title>girl with a pearl earring interactive artwork prototype </title>
-      <script type="text/javascript" src="haptic.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script>
-       $(document).ready(function() {
-       init();
-      });
-      </script>
-      <link rel="stylesheet" type="text/css" href="haptic-style.css"/>
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-      </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bar at the Folies-Bergère - Interactive Artwork</title>
+  <link rel="stylesheet" href="haptic-style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+  <script src="haptic.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof init === "function") {
+        init();
+      }
+    });
+  </script>
+</head>
 
 <body>
 <svg
